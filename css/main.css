@@ -48,15 +48,9 @@ code {
   border-radius: 4px;
 }
 
-ul {
-  font-size: 15px;
-  margin: 1.1em 0;
-}
-
 .desc {
 	font-size: 18px;
-	font-style: italic;
-	margin-bottom: 3.5em;
+	margin-bottom: 2.5em;
 }
 
 label {
