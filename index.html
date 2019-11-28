@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html amp lang="en">
+<head>
+    <meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>Page Access Tokens</title>
+	<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+	<link rel="stylesheet" href="css/main.css">
+    <script type="text/javascript" src="js/wpac.js" async></script>
+    <script type="text/javascript" src="js/main.js" async></script>
+</head>
+
+<body>
+	
+    <!--[if lte IE 9]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+    <![endif]-->
+
+	<div class="container bml-page-token">
+		<h1>Page Access Tokens</h1>
+		<form method="post" action="">
+			<div id="error_fb_connect" class="error notice-error error_fb_connect" style="display:none"></div>
+
+			<label for="bml[page_id]">Page ID</label>
+			<input type="text" class="input form-control" placeholder="e.g: 1588162751487144" id="bml[page_id]" name="bml[page_id]" value="">
+			<p class="desc help-desc"></p>
+
+			<label for="bml[page_access_token]">Page Access Token</label>
+			<textarea rows="10" cols="55" class="textarea form-control" id="bml[page_access_token]" name="bml[page_access_token]" readonly></textarea>
+			
+			<div class="bml-fb-connect">
+				<button class="bml-button button button-primary" id="bml[fb_connect]">Connect with Facebook →</button>
+			</div>
+		</form>
+	</div>
+
+	<img src="data:image/gif; base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onload="(function(el) { var t = setInterval(function () {if (window.bml_fb_init){bml_fb_init({el: el});clearInterval(t);}}, 200); })(this.parentNode);" style="display:none">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
+
+</body>
+</html>
