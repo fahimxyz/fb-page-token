@@ -133,3 +133,7 @@ ul {
 li {
 	margin-bottom: 0.25em;
 }
+
+b, strong {
+	font-weight: 700;
+}
