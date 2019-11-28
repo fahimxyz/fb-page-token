@@ -124,3 +124,12 @@ ul {
 	background-color: #f2dede;
 	border-color: #ebccd1;
 }
+
+ul {
+	font-size: 15px;
+	margin: 1.1em 0;
+}
+
+li {
+	margin-bottom: 0.25em;
+}
