@@ -71,7 +71,6 @@ function bml_fb_init(data) {
 
 	WPacFastjs.on(connectBtn, 'click', function() {
 		bml_fb_connect(el, data);
-		console.log('work!');
 		return false;
 	});
 

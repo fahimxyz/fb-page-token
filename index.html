@@ -4,21 +4,24 @@
 <head>
     <meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<title>Page Access Tokens</title>
+	<title>Facebook Access Token for Pages 👩‍💻👨‍💻</title>
+	<meta name="description" content="A Facebook Page Access Token will allow you to display events, reviews etc from your page, and avoid any API rate limit issues. This is a little tool to get a facebook page permanent token."/>
 	<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
 	<link rel="stylesheet" href="https://fahimxyz.github.io/fb-page-token/css/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700&display=swap" rel="stylesheet">
     <script type="text/javascript" src="https://fahimxyz.github.io/fb-page-token/js/wpac.js" async></script>
     <script type="text/javascript" src="https://fahimxyz.github.io/fb-page-token/js/main.js" async></script>
 </head>
 
 <body>
-	
+
     <!--[if lte IE 9]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
     <![endif]-->
 
 	<div class="container bml-page-token">
-		<h1>Page Access Tokens</h1>
+		<h1>Facebook Page Access Token</h1>
+		<p class="desc">This kind of <b>access token</b> is similar to user access tokens, except that they provide permission to APIs that read, write or modify the data belonging to a <b>Facebook Page</b>. To obtain a page access token you need to start by obtaining a user access token and asking for the <b><code>pages_show_list</code></b> or <b><code>manage_pages</code></b> permission. Once you have the user access token you then get the page access token via the <b>Graph API</b>.</p>
 		<form method="post" action="">
 			<div id="error_fb_connect" class="error notice-error error_fb_connect" style="display:none"></div>
 
@@ -26,13 +29,24 @@
 			<input type="text" class="input form-control" placeholder="e.g: 1588162751487144" id="bml[page_id]" name="bml[page_id]" value="">
 			<p class="desc help-desc"></p>
 
-			<label for="bml[page_access_token]">Page Access Token</label>
-			<textarea rows="10" cols="55" class="textarea form-control" id="bml[page_access_token]" name="bml[page_access_token]" readonly></textarea>
-			
 			<div class="bml-fb-connect">
 				<button class="bml-button button button-primary" id="bml[fb_connect]">Connect with Facebook →</button>
 			</div>
+
+			<label for="bml[page_access_token]">Page Access Token</label>
+			<textarea rows="5" cols="55" class="textarea form-control" id="bml[page_access_token]" name="bml[page_access_token]"></textarea>
+			
 		</form>
+
+		<div class="page-id">
+			<h3>How do I find my Facebook Page ID?</h3>
+			<ul>
+				<li>From News Feed, click <b>Pages</b> in the left side menu.</li>
+				<li>Click your Page name to go to your Page.</li>
+				<li>Click <b>About</b> in the left column. If you don't see <b>About</b> in the left column, click <b>See More</b>.</li>
+				<li>Scroll down to find your Page ID below <b>More Info</b>.</li>
+			</ul>
+		</div>
 	</div>
 
 	<img src="data:image/gif; base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onload="(function(el) { var t = setInterval(function () {if (window.bml_fb_init){bml_fb_init({el: el});clearInterval(t);}}, 200); })(this.parentNode);" style="display:none">
